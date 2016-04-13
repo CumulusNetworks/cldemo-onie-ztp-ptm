@@ -1,7 +1,7 @@
 options {
         directory "/var/cache/bind";
         forwarders {
-                192.168.0.254;
+                8.8.8.8;
         };
         dnssec-validation auto;
         auth-nxdomain no;
