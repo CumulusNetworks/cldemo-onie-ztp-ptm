@@ -10,7 +10,7 @@ chmod 700 -R /home/cumulus/.ssh
 chown cumulus:cumulus -R /home/cumulus/.ssh
 
 # License the switch
-cl-license -i http://oob-mgmt-server/`hostname`.lic
+cl-license -i http://192.168.0.254/`hostname`.lic
 
 # Restart switchd for license to take effect
 service switchd restart
@@ -19,7 +19,7 @@ service switchd restart
 for i in `ls /sys/class/net -1 | grep swp`; do  ip link set up $i; done;
 
 # Grab the ptm file and restart ptm
-wget http://oob-mgmt-server/topology.dot -O /etc/ptm.d/topology.dot
+wget http://192.168.0.254/topology.dot -O /etc/ptm.d/topology.dot
 service ptmd restart
 
 # CUMULUS-AUTOPROVISIONING
