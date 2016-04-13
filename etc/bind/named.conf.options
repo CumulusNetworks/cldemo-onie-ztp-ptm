@@ -1,8 +1,15 @@
+#
+# DNS options for oob-mgmt-server
+#
 options {
         directory "/var/cache/bind";
+
+        # The oob-mgmt-server will forward DNS queries it can't resolve
+        # to Google's DNS.
         forwarders {
                 8.8.8.8;
         };
+        
         dnssec-validation auto;
         auth-nxdomain no;
         listen-on-v6 { any; };

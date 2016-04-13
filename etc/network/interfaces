@@ -4,6 +4,9 @@ iface lo inet loopback
 auto eth0
 iface eth0 inet dhcp
 
+# For this oob-mgmt-server, we have eth1 connected to the oob-mgmt-switch,
+# usually something like a Cumulus RMP. This is where we statically specify
+# its IP address.
 auto eth1
 iface eth1 inet static
     address 192.168.0.254

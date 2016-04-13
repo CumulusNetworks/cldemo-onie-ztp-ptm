@@ -1,4 +1,11 @@
-# DHCP Pools
+# This is the overall DHCP pool for the management network. If a device connects
+# to the network and does not have a static address in dhcpd.hosts, it will be
+# given an address in the pool (100-200 here). In this example, we give all
+# devices in the subnet the same URLs for ONIE and ZTP, but you could specify
+# individual URLs for each device in the dhcpd.hosts entries. We also specify
+# this oob-mgmt-server (192.168.0.254) as the default gateway for all of the
+# devices.
+#
 subnet 192.168.0.0 netmask 255.255.255.0 {
   pool
   {

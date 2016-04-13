@@ -1,6 +1,9 @@
 ;
 ; BIND data file for 0.168.192.in-addr.arpa zone.
 ;
+; 192.168.0.0/24 is our out of band management network. We want to set up DNS
+; on the oob-mgmt-server so that devices can refer to it via domain name rather
+; than IP address. Our oob-mgmt-server is at 192.168.0.254
 ;
 $ORIGIN 0.168.192.in-addr.arpa.
 $TTL  604800
