@@ -1,0 +1,9 @@
+options {
+        directory "/var/cache/bind";
+        forwarders {
+                192.168.0.254;
+        };
+        dnssec-validation auto;
+        auth-nxdomain no;
+        listen-on-v6 { any; };
+};

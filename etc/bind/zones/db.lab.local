@@ -1,0 +1,17 @@
+; Created by Ansible
+;
+; BIND data file for lab.local zone.
+;
+;
+$ORIGIN lab.local.
+$TTL  604800
+@ IN  SOA localhost. root.localhost. (
+    1427819976    ; Serial
+    604800    ; Refresh
+    86400   ; Retry
+    2419200   ; Expire
+    604800  ) ; Negative Cache TTL
+;
+@   IN  NS  .
+;
+oob-mgmt-server    IN  A 192.168.0.254
