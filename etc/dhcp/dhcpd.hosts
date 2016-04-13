@@ -1,0 +1,66 @@
+# static DHCP hosts
+host leaf04 {
+  hardware ethernet a0:00:00:00:00:14;
+  fixed-address 192.168.0.14;
+  option host-name "leaf04";
+}
+host leaf02 {
+  hardware ethernet a0:00:00:00:00:12;
+  fixed-address 192.168.0.12;
+  option host-name "leaf02";
+}
+host leaf03 {
+  hardware ethernet a0:00:00:00:00:13;
+  fixed-address 192.168.0.13;
+  option host-name "leaf03";
+}
+host leaf01 {
+  hardware ethernet a0:00:00:00:00:11;
+  fixed-address 192.168.0.11;
+  option host-name "leaf01";
+}
+host edge01 {
+  hardware ethernet a0:00:00:00:00:51;
+  fixed-address 192.168.0.51;
+  option host-name "edge01";
+}
+host spine02 {
+  hardware ethernet a0:00:00:00:00:22;
+  fixed-address 192.168.0.22;
+  option host-name "spine02";
+}
+host spine01 {
+  hardware ethernet a0:00:00:00:00:21;
+  fixed-address 192.168.0.21;
+  option host-name "spine01";
+}
+host exit02 {
+  hardware ethernet a0:00:00:00:00:42;
+  fixed-address 192.168.0.42;
+  option host-name "exit02";
+}
+host exit01 {
+  hardware ethernet a0:00:00:00:00:41;
+  fixed-address 192.168.0.41;
+  option host-name "exit01";
+}
+host server01 {
+  hardware ethernet a0:00:00:00:00:31;
+  fixed-address 192.168.0.31;
+  option host-name "server01";
+}
+host server03 {
+  hardware ethernet a0:00:00:00:00:33;
+  fixed-address 192.168.0.33;
+  option host-name "server03";
+}
+host server02 {
+  hardware ethernet a0:00:00:00:00:32;
+  fixed-address 192.168.0.32;
+  option host-name "server02";
+}
+host server04 {
+  hardware ethernet a0:00:00:00:00:34;
+  fixed-address 192.168.0.34;
+  option host-name "server04";
+}
