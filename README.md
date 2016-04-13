@@ -23,8 +23,10 @@ Quickstart: Run the demo
     sudo cp ./etc/bind/zones/* /etc/bind/zones
     sudo cp ./etc/bind/named.conf.options /etc/bind
     sudo cp ./var/www/* /var/www
-    cp demo_private_key ~/.ssh/id_rsa
-    cp demo_public_key ~/.ssh/id_rsa.pub
+    cp example_private_key ~/.ssh/id_rsa
+    cp example_public_key ~/.ssh/id_rsa.pub
+    chmod 0700 -R ~/.ssh/
+    sudo cp example_public_key /var/www/id_rsa.pub
     sudo ifdown eth1
     sudo ifup eth1
     sudo service isc-dhcp-server restart
