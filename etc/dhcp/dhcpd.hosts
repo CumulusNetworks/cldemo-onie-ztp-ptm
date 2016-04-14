@@ -1,6 +1,6 @@
-# Here we statically assign DHCP entries according to the mac addresses of our
-# devices. If you specify a ZTP script here, you can customize the ztp script
-# of each device in the network.
+# Here we statically assign DHCP entries according to the eth0 mac addresses of
+# our devices.
+#
 host leaf04 {
   hardware ethernet a0:00:00:00:00:14;
   fixed-address 192.168.0.14;
