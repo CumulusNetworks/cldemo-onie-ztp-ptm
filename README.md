@@ -7,7 +7,7 @@ This demo is written for the [cldemo-vagrant](https://github.com/cumulusnetworks
 
 Quickstart: Run the demo
 ------------------------
-(This assumes you are running Ansible 1.9.4 and Vagrant 1.8.4 on your host.)
+Before running this demo, install [VirtualBox](https://www.virtualbox.org/wiki/Download_Old_Builds) and [Vagrant](https://releases.hashicorp.com/vagrant/). The currently supported versions of VirtualBox and Vagrant can be found on the [cldemo-vagrant](https://github.com/cumulusnetworks/cldemo-vagrant).
 
     git clone https://github.com/cumulusnetworks/cldemo-vagrant
     cd cldemo-vagrant
