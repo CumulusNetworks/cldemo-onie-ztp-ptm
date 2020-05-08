@@ -1,3 +1,6 @@
+# DEPRECATED
+## This repo is no longer maintained.<br>For a list of current demos, please visit:<br>https://gitlab.com/cumulus-consulting/goldenturtle/<br><br><br>
+
 ONIE, ZTP, and PTM Demo
 =======================
 This demo demonstrates how to configure an out of band management network to automatically install and configure Cumulus Linux using [Zero Touch Provisioning](https://docs.cumulusnetworks.com/display/DOCS/Zero+Touch+Provisioning+-+ZTP), and validate the cabling of the switches using [Prescriptive Topology Manager](https://docs.cumulusnetworks.com/display/DOCS/Prescriptive+Topology+Manager+-+PTM).
